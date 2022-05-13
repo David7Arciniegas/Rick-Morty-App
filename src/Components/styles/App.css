@@ -1,3 +1,95 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+
+* {
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #0E1116;
+}
+
+.App {
+  text-align: center;
+  padding: 50px;
+  background-color: #0E1116;
+
+}
+
+
+.header{
+
+  
+  background-image: url('https://media3.giphy.com/media/UbywW6H8EbYty/giphy.gif?cid=ecf05e47bclsidhrstsjq7h0hl8hookil3tx14fhdialuk8x&rid=giphy.gif&ct=g');
+  width: 100%;
+  height: 30rem;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.logo{
+   width: 10rem;
+ 
+}
+
+.logo > img{
+   object-fit: scale-down;
+}
+
+
+
+
+.name{
+  color: #B7E4F9FF;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.locationinfo{
+  
+  color: aliceblue;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.locationinfo > a{
+  padding-left: 2rem;
+}
+
+.searchbox{
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+
+
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.pokemon-list li {
+  padding: 10px;
+  width: 33.33333%;
+}
+
+.pokemon-list li .card {
+  border: 1px solid silver;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pokemon-list li .card img {
+  width: 100%;
+}

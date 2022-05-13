@@ -28,20 +28,39 @@ const searchID = () => {
 
     return (
 
-        <div>
-            <h2>{locationInfo?.name}</h2>
+      <div>
+           
 
-           <div>
-             <input type="text" onChange={e => setId (e.target.value)} 
+           <div className='searchbox'>
+           <input type="text" onChange={e => setId (e.target.value)} 
              value={id}/>
-           <button onClick={searchID}>Buscar</button>
+           <button onClick={searchID}>Search</button>
            </div>
+
+           <h2 className='name'><p className='name'>{locationInfo?.name}</p></h2>
+        
+          <div className='locationinfo'>
+
+          <div className='type'>    
+           <h2>Type:</h2> 
+           <a>{locationInfo?.type}</a>
+          </div>
+
+          <div className='dimension'>    
+           <h2>Dimension:</h2> 
+           <a>{locationInfo?.dimension}</a>
+          </div>
+
           
-            <h2>{locationInfo?.type}</h2>
-            <h2>{locationInfo?.dimension}</h2>
-            <h2>{locationInfo?.residents?.length}</h2>
+          <div className='population'>    
+           <h2>Population:</h2> 
+           <a>{locationInfo?.residents?.length}</a>
+          </div>
 
+         </div>    
 
+     
+      
            <ul className='characterlist'>
             {locationInfo.residents?.map(residents => (
 

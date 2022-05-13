@@ -1,5 +1,6 @@
 import "./Components/styles/App.css";
 import Location from "./Components/Location";
+import logo from "./assets/logo.png";
 
 
 
@@ -9,7 +10,17 @@ function App() {
   return (
   <div>
 
-<Location />
+
+    <header className="header">
+    </header>
+    <div className="logo">
+    <img src={logo}></img>
+    </div>
+
+    <Location />
+
+
+
 
   </div>
     
