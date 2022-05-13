@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from "react";
 import { useEffect } from 'react';
+import ResidentInfo from './ResidentInfo';
 
 const Location = () => {
    
@@ -35,19 +36,17 @@ const searchID = () => {
              value={id}/>
            <button onClick={searchID}>Buscar</button>
              
-           </div>  
-           
-           <ul>
-            {locationInfo.residents?.map(residents => (
-            <li>{residents}</li>
-            
-
-            ))}
-
-            </ul>
+           </div>
+          
             <h2>{locationInfo?.type}</h2>
             <h2>{locationInfo?.dimension}</h2>
             <h2>{locationInfo?.residents?.length}</h2>
+           
+            {locationInfo.residents?.map(residents => (
+
+<ResidentInfo url={residents} key={residents} />
+
+ ))}
         </div>
     );
 };

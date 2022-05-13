@@ -5,7 +5,7 @@ import ResidentInfo from "./Components/ResidentInfo";
 
 
 function App() {
-  const [showCountry, setShowCountry] = useState(false);
+ 
 
   return (
   <div>
