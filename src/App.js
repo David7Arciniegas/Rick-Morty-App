@@ -15,7 +15,7 @@ function App() {
     </header>
 
     <div className="logo">
-    <img  src={logo}width="900px"></img>
+    <img  src={logo}width="900px" alt=""></img>
     </div>
 
     <Location />

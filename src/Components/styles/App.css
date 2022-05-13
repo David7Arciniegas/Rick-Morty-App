@@ -22,13 +22,13 @@
 
 
 .header{
-
-  
   background-image: url('https://media3.giphy.com/media/UbywW6H8EbYty/giphy.gif?cid=ecf05e47bclsidhrstsjq7h0hl8hookil3tx14fhdialuk8x&rid=giphy.gif&ct=g');
   width: 100%;
-  height: 30rem;
-  background-size: cover;
-  position: relative;
+  height: 20rem;
+  background-size: fill;
+  
+ 
+position: relative;
   
 }
 
