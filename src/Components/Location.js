@@ -31,7 +31,7 @@ const searchID = () => {
       <div>
            
 
-           <div className='searchbox'>
+           <div className='searchbox' href="#">
            <input size="70" className='input' type="text" onChange={e => setId (e.target.value)} 
              value={id}/>
            <button onClick={searchID}>Search ID</button>
@@ -64,8 +64,7 @@ const searchID = () => {
       
            <ul className='characterlist'>
             {locationInfo.residents?.map(residents => (
-
-        <ResidentInfo url={residents} key={residents} />
+          <ResidentInfo url={residents} key={residents} href=""/>
    ))}
     </ul>
     </div>
