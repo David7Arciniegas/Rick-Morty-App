@@ -47,7 +47,7 @@ position: relative;
 
   width: 100%;
   height: 2rem;
-  color: aliceblue;
+  color: #69C8ECFF;
   display: flex;
   justify-content: center;
 }
@@ -62,7 +62,7 @@ position: relative;
 
 .locationinfo{
   
-  color: aliceblue;
+  color: #69C8ECFF;
   padding-top: 1rem;
   padding-bottom: 4rem;
   display: flex;

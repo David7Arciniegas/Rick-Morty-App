@@ -21,8 +21,8 @@ useEffect(() => {
          src={resident.image}alt=""
          />
          <a><p className="subtitles">Status:</p> {resident.status}</a>
-         <a><p className="subtitles">Origin</p>{resident.origin?.name}</a>
-         <a><p className="subtitles">Episodes of Appearance</p>{resident.episode?.length}</a>
+         <a><p className="subtitles">Origin:</p>{resident.origin?.name}</a>
+         <a><p className="subtitles">Episodes of Appearance:</p>{resident.episode?.length}</a>
          </div>
         </li>
     
