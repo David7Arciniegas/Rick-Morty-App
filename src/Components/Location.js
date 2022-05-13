@@ -37,32 +37,32 @@ const searchID = () => {
            <button onClick={searchID}>Search ID</button>
            </div>
 
-           <h2 className='name'><p className='name'>{locationInfo?.name}</p></h2>
+           <h2  href="#" className='name'><p className='name'>{locationInfo?.name}</p></h2>
         
 
 
-          <div className='locationinfo'>
+          <div href="#" className='locationinfo'>
            <div className='type'>    
            <h2 className='subtitles'>Type:</h2> 
-           <a>{locationInfo?.type}</a>
+           <a href="#">{locationInfo?.type}</a>
           </div>
 
-          <div className='dimension'>    
+          <div  href="#" className='dimension'>    
            <h2 className='subtitles'>Dimension:</h2> 
-           <a>{locationInfo?.dimension}</a>
+           <a href="#">{locationInfo?.dimension}</a>
           </div>
 
           
-          <div className='population'>    
+          <div  href="#" className='population'>    
            <h2 className='subtitles'>Population:</h2> 
-           <a>{locationInfo?.residents?.length}</a>
+           <a href="#">{locationInfo?.residents?.length}</a>
           </div>
 
          </div>    
 
      
       
-           <ul className='characterlist'>
+           <ul href="#" className='characterlist'>
             {locationInfo.residents?.map(residents => (
           <ResidentInfo url={residents} key={residents} href=""/>
    ))}

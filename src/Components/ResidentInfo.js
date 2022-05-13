@@ -14,7 +14,7 @@ useEffect(() => {
 
       
        <li>   
-         <div className="card">
+         <div  href="#" className="card">
         <h3 className="name-resident">{resident.name}</h3>
        
         <img

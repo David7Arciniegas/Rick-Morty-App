@@ -15,7 +15,7 @@ function App() {
     </header>
 
     <div className="logo">
-    <img  src={logo}width="900px" alt=""></img>
+    <img  src={logo}width="900px" alt="" href="#"></img>
     </div>
 
     <Location />
