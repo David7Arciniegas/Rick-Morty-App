@@ -11,18 +11,23 @@ useEffect(() => {
 
 
     return (
-        <div>
-        <h3>{resident.name}</h3>
+
+      
+       <li>   
+         <div className="card">
+        <h3 className="name-resident">{resident.name}</h3>
+       
         <img
          src={resident.image}alt=""
          />
-         <p>{resident.status}</p>
-         <p>{resident.origin?.name}</p>
-         <h4>{resident.episode?.length}</h4>
+         <p><p className="subtitles">Status:</p> {resident.status}</p>
+         <p><p className="subtitles">Origin</p>{resident.origin?.name}</p>
+         <p><p className="subtitles">Episodes of Appearance</p>{resident.episode?.length}</p>
+         </div>
+        </li>
+    
 
-       
-
-        </div>
+        
     );
 };
 

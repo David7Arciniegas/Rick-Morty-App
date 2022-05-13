@@ -9,6 +9,8 @@
   margin: 0;
   box-sizing: border-box;
   background-color: #0E1116;
+  color: aliceblue;
+  
 }
 
 .App {
@@ -30,19 +32,29 @@
   
 }
 
+
 .logo{
-   width: 10rem;
- 
+  display: flex;
+  justify-content: center;
 }
-
 .logo > img{
-   object-fit: scale-down;
+
+  padding: 4rem;
+  
 }
 
+.searchbox{
 
+  width: 100%;
+  height: 2rem;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
 
 
 .name{
+  padding-top: 1rem;
   color: #B7E4F9FF;
   text-align: center;
   font-size: 4rem;
@@ -51,7 +63,8 @@
 .locationinfo{
   
   color: aliceblue;
-  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -61,35 +74,37 @@
   padding-left: 2rem;
 }
 
-.searchbox{
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  
+
+
+.name-resident{
+  padding-bottom: 1rem;
 }
 
-
-
-
-
-
-.pokemon-list {
+.characterlist {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.pokemon-list li {
+.characterlist li {
   padding: 10px;
   width: 33.33333%;
 }
 
-.pokemon-list li .card {
-  border: 1px solid silver;
+.characterlist li .card {
+
+ 
+  border: 1px solid #3a4767;
   padding: 10px;
   border-radius: 10px;
 }
 
-.pokemon-list li .card img {
+.characterlist li .card img {
   width: 100%;
+}
+
+
+.subtitles{
+  color: aqua;
+  font-weight: 600;
 }

@@ -32,28 +32,29 @@ const searchID = () => {
            
 
            <div className='searchbox'>
-           <input type="text" onChange={e => setId (e.target.value)} 
+           <input size="70" className='input' type="text" onChange={e => setId (e.target.value)} 
              value={id}/>
-           <button onClick={searchID}>Search</button>
+           <button onClick={searchID}>Search ID</button>
            </div>
 
            <h2 className='name'><p className='name'>{locationInfo?.name}</p></h2>
         
-          <div className='locationinfo'>
 
-          <div className='type'>    
-           <h2>Type:</h2> 
+
+          <div className='locationinfo'>
+           <div className='type'>    
+           <h2 className='subtitles'>Type:</h2> 
            <a>{locationInfo?.type}</a>
           </div>
 
           <div className='dimension'>    
-           <h2>Dimension:</h2> 
+           <h2 className='subtitles'>Dimension:</h2> 
            <a>{locationInfo?.dimension}</a>
           </div>
 
           
           <div className='population'>    
-           <h2>Population:</h2> 
+           <h2 className='subtitles'>Population:</h2> 
            <a>{locationInfo?.residents?.length}</a>
           </div>
 
