@@ -14,7 +14,7 @@ useEffect(() => {
         <div>
         <h3>{resident.name}</h3>
         <img
-         src={resident.image}
+         src={resident.image}alt=""
          />
          <p>{resident.status}</p>
          <p>{resident.origin?.name}</p>

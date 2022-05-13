@@ -35,20 +35,21 @@ const searchID = () => {
              <input type="text" onChange={e => setId (e.target.value)} 
              value={id}/>
            <button onClick={searchID}>Buscar</button>
-             
            </div>
           
             <h2>{locationInfo?.type}</h2>
             <h2>{locationInfo?.dimension}</h2>
             <h2>{locationInfo?.residents?.length}</h2>
-           
+
+
+           <ul className='characterlist'>
             {locationInfo.residents?.map(residents => (
 
-<ResidentInfo url={residents} key={residents} />
-
- ))}
-        </div>
-    );
-};
+        <ResidentInfo url={residents} key={residents} />
+   ))}
+    </ul>
+    </div>
+      );
+    };
 
 export default Location;
