@@ -20,9 +20,9 @@ useEffect(() => {
         <img
          src={resident.image}alt="" href="!#"
          />
-         <a><p className="subtitles">Status:</p> {resident?.status}</a>
-         <a><p className="subtitles">Origin:</p>{resident?.origin?.name}</a>
-         <a><p className="subtitles">Episodes of Appearance:</p>{resident.episode?.length}</a>
+         <a href="#"><p className="subtitles">Status:</p> {resident?.status}</a>
+         <a href="#"><p className="subtitles">Origin:</p>{resident?.origin?.name}</a>
+         <a href="#"><p className="subtitles">Episodes of Appearance:</p>{resident.episode?.length}</a>
          </div>
         </li>
     
