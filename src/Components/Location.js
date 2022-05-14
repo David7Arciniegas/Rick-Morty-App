@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import axios from 'axios';
 import { useState } from "react";
 import { useEffect } from 'react';
@@ -31,31 +32,31 @@ const searchID = () => {
       <div>
            
 
-           <div className='searchbox' href="#">
+           <div className='searchbox'href="javascript:void(0)">
            <input size="70" className='input' type="text" onChange={e => setId (e.target.value)} 
              value={id}/>
            <button onClick={searchID}>Search ID</button>
            </div>
 
-           <h2  href="#" className='name'><p className='name'>{locationInfo?.name}</p></h2>
+           <h2 href="javascript:void(0)" className='name'><p className='name'>{locationInfo?.name}</p></h2>
         
 
 
-          <div href="#" className='locationinfo'>
+          <div href="javascript:void(0)" className='locationinfo'>
            <div className='type'>    
            <h2 className='subtitles'>Type:</h2> 
            <a href="#">{locationInfo?.type}</a>
           </div>
 
-          <div  href="#" className='dimension'>    
+          <div href="javascript:void(0)" className='dimension'>    
            <h2 className='subtitles'>Dimension:</h2> 
-           <a href="#">{locationInfo?.dimension}</a>
+           <a href="javascript:void(0)">{locationInfo?.dimension}</a>
           </div>
 
           
-          <div  href="#" className='population'>    
+          <div href="javascript:void(0)" className='population'>    
            <h2 className='subtitles'>Population:</h2> 
-           <a href="#">{locationInfo?.residents?.length}</a>
+           <a href="javascript:void(0)">{locationInfo?.residents?.length}</a>
           </div>
 
          </div>    
