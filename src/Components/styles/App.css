@@ -20,15 +20,24 @@
 
 }
 
+.image{
+  width: 80%;
+  height: 20rem;
+  
+}
 
 .header{
-  background-image: url('https://media3.giphy.com/media/UbywW6H8EbYty/giphy.gif?cid=ecf05e47bclsidhrstsjq7h0hl8hookil3tx14fhdialuk8x&rid=giphy.gif&ct=g');
-  width: 100%;
+  
+  width: 100rem;
   height: 20rem;
-  background-size: fill;
+  background-size: contain;
   
  
-position: relative;
+}
+
+.header > img{
+  
+  
   
 }
 
@@ -108,3 +117,15 @@ position: relative;
   color: aqua;
   font-weight: 600;
 }
+
+@media (max-width: 600px){
+
+  .image{
+    width: 70%;
+  }
+
+
+}
+
+
+  
