@@ -29,34 +29,34 @@ const searchID = () => {
 
     return (
 
-      <div>
+      <div href="#">
            
 
-           <div className='searchbox'href="javascript:void(0)">
+           <div className='searchbox' href="#">
            <input size="70" className='input' type="text" onChange={e => setId (e.target.value)} 
              value={id}/>
            <button onClick={searchID}>Search ID</button>
            </div>
 
-           <h2 href="javascript:void(0)" className='name'><p className='name'>{locationInfo?.name}</p></h2>
+           <h2 className='name'><p className='name'>{locationInfo?.name}</p></h2>
         
 
 
-          <div href="javascript:void(0)" className='locationinfo'>
+          <div className='locationinfo'>
            <div className='type'>    
            <h2 className='subtitles'>Type:</h2> 
            <a href="#">{locationInfo?.type}</a>
           </div>
 
-          <div href="javascript:void(0)" className='dimension'>    
+          <div className='dimension'>    
            <h2 className='subtitles'>Dimension:</h2> 
-           <a href="javascript:void(0)">{locationInfo?.dimension}</a>
+           <a>{locationInfo?.dimension}</a>
           </div>
 
           
-          <div href="javascript:void(0)" className='population'>    
-           <h2 className='subtitles'>Population:</h2> 
-           <a href="javascript:void(0)">{locationInfo?.residents?.length}</a>
+          <div href="#" className='population'>    
+           <h2 href="#">Population:</h2> 
+           <a href="#">{locationInfo?.residents?.length}</a>
           </div>
 
          </div>    
